@@ -171,4 +171,4 @@ root.querySelectorAll('.agni-toggle').forEach(function(t){setOpen(t,open);});});
 var h=location.hash&&root.querySelector(location.hash);if(h&&h.classList.contains('agni-detail')){var t=root.querySelector('[aria-controls="'+h.id+'"]');setOpen(t,true);h.scrollIntoView();}
 })();
 </script>
-</section></div></body></html>
+</section></div><script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.body.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({type:"agni-tracker-height",height:h},"*");}}window.addEventListener("load",send);window.addEventListener("resize",send);if(window.ResizeObserver){new ResizeObserver(send).observe(document.body);}document.addEventListener("click",function(){setTimeout(send,50);});send();})();</script></body></html>
